@@ -5,4 +5,7 @@ root 'application#home'
   post '/login' => 'sessions#create'
   post '/logout' => 'sessions#destroy'
 
+  get 'secrets/new'
+  get '/secret' => 'secrets#show'
+
 end

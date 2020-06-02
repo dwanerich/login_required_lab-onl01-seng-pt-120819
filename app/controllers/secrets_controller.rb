@@ -3,17 +3,4 @@ class SecretsController < ApplicationController
 
     def show
     end
- 
-  def index
-  end
- 
-  def create
-  end
- 
-    private
-
-    def require_login
-        return head(:forbidden) unless session.include? :name
-    end
-
 end
